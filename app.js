@@ -4,7 +4,8 @@ new Vue({
     el: "#vue-app",
     // all data comes here
     data: {
-        name:"Shaun",
+        name:"",
+        age:"",
         job: "Software Engineer",
         website: "https://www.google.com",
         websiteTag: '<a href="https://www.google.com">The Net Ninja </a>',
@@ -25,6 +26,12 @@ new Vue({
         },
         testkeyup: function(){
             alert("testing key up")
+        },
+        logname: function(){
+            //console.log("name entered");
+        },
+        logage: function(){
+            console.log("age entered");
         }
     }
 });
