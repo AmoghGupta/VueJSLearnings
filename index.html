@@ -27,6 +27,19 @@
         <label>Age:</label>
         <input type="text" v-on:keyup="logage" v-model="age">
         <span>{{age}}</span>
+         <p>Age</p>
+        <!-- Computed Properties -->
+         <button type="button" v-on:click="a++">Add to A</button>
+         <button type="button" v-on:click="b++">Add to B</button>
+         <p>A - {{a}}</p>
+         <p>B - {{b}}</p>
+         <!-- Variables are being watched, whenever any one of them change it will re-run everything again -->
+         <!-- computed properties: Variables are being watched, whenever any one them change it will re-run only the one changed -->
+         <!-- Computed properties are more efficient -->
+         <p>Age + A = {{addToA}}</p>
+         <p>Age + B = {{addToB}}</p>
+
+
     </div>
     <script src="app.js"></script>
 </body>

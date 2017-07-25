@@ -4,6 +4,8 @@ new Vue({
     el: "#vue-app",
     // all data comes here
     data: {
+        a:0,
+        b: 0,
         name:"",
         age:"",
         job: "Software Engineer",
@@ -32,6 +34,17 @@ new Vue({
         },
         logage: function(){
             console.log("age entered");
+        }
+    },
+
+    computed: {
+        addToA: function(){
+            console.log("Added to A");
+            return this.a + this.age;
+        },
+        addToB: function(){
+            console.log("Added to B");
+            return this.b + this.age;
         }
     }
 });
