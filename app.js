@@ -22,6 +22,9 @@ new Vue({
         },
         test: function(){
             alert("testing event modifiers")
+        },
+        testkeyup: function(){
+            alert("testing key up")
         }
     }
 });
