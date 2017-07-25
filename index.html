@@ -1,0 +1,25 @@
+<html>
+<head>
+ <link rel="stylesheet" type="text/css" href="mystyle.css">
+ <script src="https://unpkg.com/vue"></script>
+ 
+</head>    
+<body>
+    <div id="vue-app">
+        <h1>{{greet("afternoon")}}</h1>
+        <!-- Attribute binding in vue JS (v-bind: or only colon :href will also work) -->
+        <a v-bind:href="website">The Net Ninja </a> 
+        <h1>{{name}}</h1>
+        <p>Job: {{job}}</p>
+        <input type="text" v-bind:value="name">
+        <!-- To render HTML template -->
+        <p v-html="websiteTag"></p>
+        <!-- Event modifiers -->
+        <input type="button" v-on:click.once="add(1)" value="Add"></input>
+        <p>{{value}}</p>
+        <!-- Event modifiers -->
+        <a href="https://www.google.com" v-on:click.prevent="test()">Test</a>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
